@@ -47,3 +47,14 @@ SELECT * FROM 口座
  WHERE 更新日 BETWEEN '2017-12-30' AND '2018-01-04'
 
 -- 21
+SELECT * FROM 口座
+ WHERE 残高 < 10000
+ 	AND 更新日 IS NOT NULL
+
+-- 22
+SELECT * FROM 口座
+ WHERE 口座番号 LIKE '2______'
+   OR 名義 LIKE 'エ__　%コ'
+
+-- 23
+
